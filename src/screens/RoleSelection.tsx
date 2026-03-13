@@ -1,6 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'motion/react';
 import Navbar from '../components/Navbar.tsx';
+import ScrambleText from '../components/ScrambleText.tsx';
 
 const panelVariants = {
   initial: (side: 'left' | 'right') => ({ 
@@ -44,7 +45,7 @@ export default function RoleSelection() {
         <motion.div variants={contentVariants} className="relative z-10 flex flex-col items-center group-hover:text-black transition-colors duration-500 w-full px-4 overflow-visible">
           <span className="text-[12px] tracking-[0.6em] font-bold text-outline group-hover:text-black/40 mb-8 uppercase transition-colors text-center">I WANT TO</span>
           <h1 className="font-headline font-black text-[10vw] md:text-[8vw] leading-tight tracking-tighter uppercase mb-4 text-center">
-            HIRE.
+            <ScrambleText text="HIRE" /><span className="text-outline">.</span>
           </h1>
           <div className="w-12 h-px bg-white group-hover:bg-black transition-colors"></div>
         </motion.div>
@@ -64,7 +65,7 @@ export default function RoleSelection() {
         <motion.div variants={contentVariants} className="relative z-10 flex flex-col items-center group-hover:text-black transition-colors duration-500 w-full px-4 overflow-visible">
           <span className="text-[12px] tracking-[0.6em] font-bold text-outline group-hover:text-black/40 mb-8 uppercase transition-colors text-center">I WANT TO</span>
           <h1 className="font-headline font-black text-[10vw] md:text-[8vw] leading-tight tracking-tighter uppercase mb-4 text-center">
-            WORK.
+            <ScrambleText text="WORK" /><span className="text-outline">.</span>
           </h1>
           <div className="w-12 h-px bg-white group-hover:bg-black transition-colors"></div>
         </motion.div>

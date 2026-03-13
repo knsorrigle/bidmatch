@@ -1,6 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'motion/react';
 import Navbar from '../components/Navbar.tsx';
+import ScrambleText from '../components/ScrambleText.tsx';
 
 const textRevealVariants = {
   initial: { y: 100, opacity: 0 },
@@ -41,12 +42,13 @@ export default function Login() {
               animate="animate"
               className="font-headline font-black text-[12vw] lg:text-[15vw] leading-none tracking-tighter uppercase m-0 -ml-2 pt-8"
             >
-              ACCOUNT<span className="text-outline">.</span>
+              <ScrambleText text="ACCOUNT" /><span className="text-outline">.</span>
             </motion.h1>
           </div>
 
           {/* Login Buttons */}
-          <div className="mt-24 lg:mt-0 flex flex-col gap-6 w-full lg:w-[480px]">
+          <div className="mt-24 lg:mt-0 flex flex-col gap-6 w-full lg:w-[480px] relative z-20 bg-black lg:pl-16">
+            <div className="bg-black w-full h-[150%] absolute -top-[25%] -z-10 -left-16 lg:w-[calc(100%+4rem)]"></div>
             {[
               { label: 'LOGIN WITH GOOGLE', sub: 'GOOGLE' },
               { label: 'LOGIN WITH APPLE', icon: 'apple' }

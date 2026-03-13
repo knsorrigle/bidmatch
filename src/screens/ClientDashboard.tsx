@@ -1,6 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'motion/react';
 import Navbar from '../components/Navbar.tsx';
+import ScrambleText from '../components/ScrambleText.tsx';
 
 const FREELANCERS = [
   { rank: '01', name: 'ALEXA VANDERGRIFF', title: 'Lead System Architect', score: 9.8, match: 98, amber: true },
@@ -31,7 +32,8 @@ export default function ClientDashboard() {
             transition={{ duration: 1.2, ease: [0.76, 0, 0.24, 1] }}
             className="font-headline font-black text-[10vw] lg:text-[12vw] leading-tight tracking-tighter uppercase -ml-2 mt-4"
           >
-            DASHBOARD<span className="text-outline">.</span>
+            <ScrambleText text="12 FREELANCERS" /><br/>
+            <ScrambleText text="RANKED" /><span className="text-outline">.</span>
           </motion.h1>
         </header>
 

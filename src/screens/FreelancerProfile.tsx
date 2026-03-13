@@ -2,6 +2,7 @@ import { useNavigate } from 'react-router-dom';
 import { motion, useMotionValue, useTransform, animate } from 'motion/react';
 import { useEffect, useState } from 'react';
 import Navbar from '../components/Navbar.tsx';
+import ScrambleText from '../components/ScrambleText.tsx';
 
 const SKILLS = ['TYPESCRIPT', 'CLOUD INFRASTRUCTURE', 'SYSTEM DESIGN', 'RUST'];
 
@@ -38,7 +39,8 @@ export default function FreelancerProfile() {
               transition={{ duration: 1.2, ease: [0.76, 0, 0.24, 1] }}
               className="font-headline font-black text-[10vw] lg:text-[12vw] leading-tight tracking-tighter uppercase -ml-2 mt-4"
             >
-              ALEXA<br/>VANDERGRIFF<span className="text-outline">.</span>
+              <ScrambleText text="MARCUS" /><br/>
+              <ScrambleText text="VANCE" /><span className="text-outline">.</span>
             </motion.h1>
             
             <div className="flex flex-wrap gap-4 mt-20">

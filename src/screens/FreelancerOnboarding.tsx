@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'motion/react';
 import Navbar from '../components/Navbar.tsx';
+import ScrambleText from '../components/ScrambleText.tsx';
 
 const SKILLS = ['AI/ML', 'DEVOPS', 'RUST', 'TYPESCRIPT', 'NEXT.JS', 'SYSTEM DESIGN'];
 const EXPERIENCE_OPTIONS = ['0–1', '2–3', '4–6', '7+'];
@@ -60,12 +61,13 @@ export default function FreelancerOnboarding() {
                 LET'S BUILD YOUR
               </motion.span>
               <motion.h1 variants={textRevealVariants} className="font-headline font-black text-[12vw] leading-[1] tracking-tighter uppercase -ml-2">
-                PROFILE.
+                <ScrambleText text="PROFILE" /><span className="text-outline">.</span>
               </motion.h1>
             </div>
             
-            <div className="flex flex-col w-1/2 max-w-lg lg:ml-auto space-y-12 lg:space-y-16 relative z-20">
-              <motion.div variants={textRevealVariants} className="space-y-12">
+            <div className="flex flex-col w-1/2 max-w-lg lg:ml-auto space-y-12 lg:space-y-16 relative z-20 bg-black lg:pl-12 lg:bg-gradient-to-r lg:from-transparent lg:via-black lg:to-black">
+              <div className="bg-black w-full h-full absolute inset-0 -z-10 lg:-left-24 lg:w-[calc(100%+6rem)]"></div>
+              <motion.div variants={textRevealVariants} className="space-y-12 bg-black relative">
                 <div className="group border-b border-outline-variant/30 pb-2">
                   <label className="block text-[9px] tracking-[0.3em] font-bold text-outline uppercase mb-2 opacity-50">FULL NAME</label>
                   <input
@@ -110,7 +112,7 @@ export default function FreelancerOnboarding() {
             className="w-full flex flex-col px-12 lg:px-24 min-h-[70vh] pt-24 pb-12 overflow-visible"
           >
             <motion.h1 variants={textRevealVariants} className="font-headline font-black text-[12vw] leading-tight tracking-tighter uppercase mb-2">
-              EXPERTISE.
+              <ScrambleText text="EXPERTISE" /><span className="text-outline">.</span>
             </motion.h1>
             <motion.p variants={textRevealVariants} className="text-xs text-outline tracking-widest uppercase mb-12 opacity-50">
               Select all that apply.
@@ -152,12 +154,12 @@ export default function FreelancerOnboarding() {
             <div className="w-1/2 pt-16 z-10">
               <motion.span variants={textRevealVariants} className="text-[10px] tracking-[0.5em] font-bold text-outline uppercase mb-2 block">YOUR</motion.span>
               <motion.h1 variants={textRevealVariants} className="font-headline font-black text-[10vw] leading-tight tracking-tighter uppercase">
-                EXPERIENCE.
+                <ScrambleText text="EXPERIENCE" /><span className="text-outline">.</span>
               </motion.h1>
             </div>
             
-            <div className="w-1/2 h-full flex flex-col justify-center px-12 md:px-20 space-y-16 lg:border-l border-outline-variant/10 z-20 relative">
-              <motion.div variants={textRevealVariants} className="space-y-6">
+            <div className="w-1/2 h-full flex flex-col justify-center px-12 md:px-20 space-y-16 lg:border-l border-outline-variant/10 z-20 relative bg-black">
+              <motion.div variants={textRevealVariants} className="space-y-6 bg-black relative">
                 <label className="text-[10px] tracking-[0.3em] font-bold text-outline uppercase opacity-40">YEARS OF EXPERIENCE</label>
                 <div className="flex gap-2">
                   {EXPERIENCE_OPTIONS.map(opt => (
@@ -214,15 +216,16 @@ export default function FreelancerOnboarding() {
             <div className="w-1/2 flex flex-col justify-center relative z-10 pt-16">
               <motion.span variants={textRevealVariants} className="text-[11px] tracking-[0.4em] font-bold text-outline mb-4 uppercase">PROVE YOUR</motion.span>
               <motion.h1 variants={textRevealVariants} className="font-headline font-black text-[12vw] leading-tight tracking-tighter uppercase mb-6">
-                WORK.
+                <ScrambleText text="WORK" /><span className="text-outline">.</span>
               </motion.h1>
               <motion.p variants={textRevealVariants} className="text-[10px] tracking-widest text-outline max-w-xs leading-relaxed opacity-40 uppercase">
                 Links help us verify your skills automatically.
               </motion.p>
             </div>
 
-            <div className="w-1/2 flex flex-col space-y-12 relative z-20">
-              <motion.div variants={textRevealVariants} className="space-y-8">
+            <div className="w-1/2 flex flex-col space-y-12 relative z-20 bg-black lg:pl-16">
+              <div className="bg-black w-full h-full absolute inset-0 -z-10 -left-16 lg:w-[calc(100%+4rem)]"></div>
+              <motion.div variants={textRevealVariants} className="space-y-8 bg-black relative">
                 {['GITHUB PROFILE', 'PORTFOLIO URL', 'LINKEDIN'].map(label => (
                   <div key={label} className="border-b border-outline-variant/30 pb-2">
                     <label className="block text-[9px] tracking-[0.3em] font-bold text-outline uppercase mb-2 opacity-50">{label}</label>
@@ -271,7 +274,7 @@ export default function FreelancerOnboarding() {
             <motion.div variants={textRevealVariants} className="mb-12 pt-16">
               <span className="text-[12px] tracking-[0.5em] font-bold text-outline uppercase mb-4 block">YOU'RE</span>
               <h1 className="font-headline font-black text-[12vw] leading-[1] tracking-tighter uppercase">
-                READY.
+                <ScrambleText text="READY" /><span className="text-outline">.</span>
               </h1>
             </motion.div>
             

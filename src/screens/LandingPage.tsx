@@ -1,6 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'motion/react';
 import Navbar from '../components/Navbar.tsx';
+import ScrambleText from '../components/ScrambleText.tsx';
 
 const staggerContainer = {
   animate: { transition: { staggerChildren: 0.1, delayChildren: 0.4 } }
@@ -39,8 +40,8 @@ export default function LandingPage() {
               variants={textReveal}
               className="font-headline font-black text-[12vw] leading-tight tracking-tighter uppercase -ml-2"
             >
-              HIRE WITHOUT<br/>
-              THE GUESSWORK<span className="text-outline">.</span>
+              <ScrambleText text="HIRE WITHOUT" /><br/>
+              <ScrambleText text="THE GUESSWORK" /><span className="text-outline">.</span>
             </motion.h1>
           </div>
 

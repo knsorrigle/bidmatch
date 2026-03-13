@@ -1,6 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'motion/react';
 import Navbar from '../components/Navbar.tsx';
+import ScrambleText from '../components/ScrambleText.tsx';
 
 const PROJECTS = [
   { id: 1, title: 'Neural Engine Optimizer', client: 'X-CORP', budget: '$12k', complexity: 'HIGH', tags: ['RUST', 'AI'] },
@@ -31,9 +32,9 @@ export default function BrowseProjects() {
             initial={{ y: 100, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 1, ease: [0.76, 0, 0.24, 1] }}
-            className="font-headline font-black text-[12vw] leading-normal tracking-tighter uppercase -ml-2"
+            className="font-headline font-black text-[10vw] leading-normal tracking-tighter uppercase -ml-2"
           >
-            PROJECTS<span className="text-outline">.</span>
+            <ScrambleText text="FIND YOUR NEXT PROJECT" /><span className="text-outline">.</span>
           </motion.h1>
         </header>
 

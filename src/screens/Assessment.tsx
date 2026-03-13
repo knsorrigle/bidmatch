@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'motion/react';
 import Navbar from '../components/Navbar.tsx';
+import ScrambleText from '../components/ScrambleText.tsx';
 
 const QUESTIONS = [
   {
@@ -45,7 +46,7 @@ export default function Assessment() {
                 animate={{ opacity: 0.4, y: 0 }}
                 className="text-[12px] tracking-[0.6em] font-bold text-outline mb-12 block uppercase"
               >
-                SKILL VALIDATION — 0{qIndex + 1}
+                <ScrambleText text="Technical Proficiency Tier III" />
               </motion.span>
               <motion.h1 
                 initial={{ opacity: 0, y: 40 }}
@@ -53,11 +54,12 @@ export default function Assessment() {
                 transition={{ delay: 0.2, duration: 1 }}
                 className="font-headline font-black text-[10vw] lg:text-[12vw] leading-tight tracking-tighter uppercase -ml-2 mt-4"
               >
-                {QUESTIONS[qIndex].question}
+                <ScrambleText text={QUESTIONS[qIndex].question} />
               </motion.h1>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full lg:w-1/3 mb-12">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full lg:w-1/3 mb-12 relative z-20 bg-black lg:pl-12">
+              <div className="bg-black w-full h-[150%] absolute -top-[25%] -z-10 -left-12 lg:w-[calc(100%+3rem)]"></div>
               {QUESTIONS[qIndex].options.map((opt, i) => (
                 <motion.button
                   key={opt}
