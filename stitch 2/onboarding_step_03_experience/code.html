@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "tertiary": "#e2e2e2",
+              "on-secondary-container": "#e2e2e2",
+              "secondary-container": "#454747",
+              "on-tertiary-container": "#000000",
+              "error-container": "#93000a",
+              "surface-container": "#1f1f1f",
+              "primary-fixed-dim": "#454747",
+              "on-tertiary-fixed": "#ffffff",
+              "surface": "#131313",
+              "primary-container": "#d4d4d4",
+              "on-tertiary": "#1a1c1c",
+              "on-secondary-fixed": "#1a1c1c",
+              "tertiary-fixed": "#5d5f5f",
+              "primary-fixed": "#5d5f5f",
+              "on-primary-fixed-variant": "#e2e2e2",
+              "background": "#131313",
+              "outline": "#919191",
+              "on-surface-variant": "#c6c6c6",
+              "on-secondary-fixed-variant": "#3a3c3c",
+              "surface-container-high": "#2a2a2a",
+              "inverse-primary": "#5d5f5f",
+              "inverse-on-surface": "#303030",
+              "on-surface": "#e2e2e2",
+              "on-error": "#690005",
+              "surface-tint": "#c6c6c7",
+              "secondary": "#c6c6c7",
+              "outline-variant": "#474747",
+              "on-secondary": "#1a1c1c",
+              "on-background": "#e2e2e2",
+              "on-tertiary-fixed-variant": "#e2e2e2",
+              "on-primary": "#1a1c1c",
+              "primary": "#ffffff",
+              "tertiary-fixed-dim": "#454747",
+              "error": "#ffb4ab",
+              "on-error-container": "#ffdad6",
+              "surface-variant": "#353535",
+              "surface-bright": "#393939",
+              "surface-dim": "#131313",
+              "inverse-surface": "#e2e2e2",
+              "surface-container-low": "#1b1b1b",
+              "secondary-fixed": "#c6c6c7",
+              "secondary-fixed-dim": "#aaabab",
+              "tertiary-container": "#909191",
+              "surface-container-lowest": "#0e0e0e",
+              "on-primary-container": "#000000",
+              "surface-container-highest": "#353535",
+              "on-primary-fixed": "#ffffff"
+            },
+            fontFamily: {
+              "headline": ["Epilogue"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .vertical-text {
+        writing-mode: vertical-rl;
+        transform: rotate(180deg);
+      }
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      ::selection {
+        background-color: #ffffff;
+        color: #131313;
+      }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary selection:text-background min-h-screen overflow-hidden">
+<!-- Top App Bar -->
+<header class="fixed top-0 left-0 w-full h-20 flex items-center justify-between px-12 z-50">
+<div class="font-headline text-xl tracking-[0.2em] font-extrabold text-primary">BIDMATCH</div>
+<div class="font-label text-xs tracking-[0.3em] text-on-surface-variant opacity-60">STEP 03 / 05</div>
+</header>
+<!-- Side Bar Label (Editorial) -->
+<aside class="fixed left-0 top-0 h-full w-20 flex items-center justify-center border-r border-outline-variant border-opacity-10 z-40">
+<div class="vertical-text font-label text-[10px] tracking-[0.5em] text-on-surface-variant whitespace-nowrap">
+            ONBOARDING SEQUENCE
+        </div>
+</aside>
+<main class="ml-20 min-h-screen grid grid-cols-12 gap-0 relative">
+<!-- Left Side: Massive Typography -->
+<section class="col-span-12 lg:col-span-6 flex flex-col justify-center px-16 pt-24">
+<div class="mb-4">
+<span class="font-label text-xs tracking-[0.4em] text-outline">YOUR</span>
+</div>
+<h1 class="font-headline text-[10vw] leading-[0.85] font-extrabold tracking-tighter text-primary">
+                EXPERIENCE.
+            </h1>
+</section>
+<!-- Right Side: Interaction Zones -->
+<section class="col-span-12 lg:col-span-6 bg-surface-container-lowest flex flex-col justify-center px-16 pt-24 border-l border-outline-variant border-opacity-20">
+<!-- Section 1: Years of Experience -->
+<div class="mb-24">
+<label class="block font-label text-[10px] tracking-[0.4em] text-outline mb-8">YEARS OF EXPERIENCE</label>
+<div class="flex flex-wrap gap-4">
+<button class="flex-1 min-w-[100px] h-16 border border-outline-variant flex items-center justify-center font-label text-sm tracking-widest hover:border-primary transition-colors">0–1</button>
+<button class="flex-1 min-w-[100px] h-16 bg-primary text-background flex items-center justify-center font-label text-sm tracking-widest font-bold">2–3</button>
+<button class="flex-1 min-w-[100px] h-16 border border-outline-variant flex items-center justify-center font-label text-sm tracking-widest hover:border-primary transition-colors">4–6</button>
+<button class="flex-1 min-w-[100px] h-16 border border-outline-variant flex items-center justify-center font-label text-sm tracking-widest hover:border-primary transition-colors">7+</button>
+</div>
+</div>
+<!-- Section 2: Hourly Rate -->
+<div class="max-w-md">
+<label class="block font-label text-[10px] tracking-[0.4em] text-outline mb-4">HOURLY RATE (USD)</label>
+<div class="relative group">
+<div class="flex items-baseline border-b border-outline-variant group-focus-within:border-primary transition-all pb-2">
+<span class="font-headline text-5xl font-bold text-primary mr-2 opacity-30">$</span>
+<input class="bg-transparent border-none p-0 font-headline text-7xl font-bold text-primary focus:ring-0 w-full placeholder-surface-container-high" spellcheck="false" type="text" value="85"/>
+<span class="animate-pulse w-1 h-14 bg-primary self-center ml-1"></span>
+</div>
+</div>
+<p class="mt-6 font-label text-xs text-on-surface-variant opacity-40 leading-relaxed">
+                    Based on market trends for your seniority, $75–$110 is the competitive range.
+                </p>
+</div>
+</section>
+</main>
+<!-- Bottom Navigation Component -->
+<footer class="fixed bottom-0 left-0 w-full h-32 px-12 flex items-center justify-between z-50">
+<!-- Pagination Component -->
+<div class="flex items-center space-x-8">
+<div class="flex space-x-4">
+<span class="font-label text-xs text-primary font-bold">01</span>
+<span class="font-label text-xs text-on-surface-variant opacity-30">02</span>
+<span class="font-label text-xs text-primary font-bold relative after:content-[''] after:absolute after:-bottom-2 after:left-0 after:w-full after:h-[2px] after:bg-primary">03</span>
+<span class="font-label text-xs text-on-surface-variant opacity-30">04</span>
+<span class="font-label text-xs text-on-surface-variant opacity-30">05</span>
+</div>
+</div>
+<!-- SingleButton Component -->
+<div class="w-full max-w-xs">
+<button class="w-full h-[52px] border border-outline flex items-center justify-center group hover:bg-primary hover:text-background transition-all">
+<span class="font-label text-xs tracking-[0.3em] font-bold">CONTINUE</span>
+<span class="material-symbols-outlined ml-3 text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+</footer>
+<!-- Structural Background Elements -->
+<div class="fixed top-0 right-0 w-1/2 h-full bg-surface-container-lowest -z-10 pointer-events-none"></div>
+</body></html>

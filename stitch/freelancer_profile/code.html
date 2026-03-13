@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>BIDMATCH | Professional Freelancer Profile</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@700;800;900&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              colors: {
+                "tertiary": "#e2e2e2",
+                "surface-container-low": "#1b1b1b",
+                "surface-dim": "#131313",
+                "on-secondary-fixed": "#1a1c1c",
+                "on-secondary-fixed-variant": "#3a3c3c",
+                "on-primary-fixed": "#ffffff",
+                "secondary-fixed-dim": "#aaabab",
+                "error": "#ffb4ab",
+                "surface-container-highest": "#353535",
+                "surface-bright": "#393939",
+                "on-tertiary-container": "#000000",
+                "on-tertiary": "#1a1c1c",
+                "tertiary-container": "#909191",
+                "on-tertiary-fixed": "#ffffff",
+                "primary-fixed-dim": "#454747",
+                "on-surface-variant": "#c6c6c6",
+                "inverse-surface": "#e2e2e2",
+                "surface-variant": "#353535",
+                "on-surface": "#e2e2e2",
+                "tertiary-fixed": "#5d5f5f",
+                "surface": "#131313",
+                "on-error": "#690005",
+                "on-primary-container": "#000000",
+                "primary": "#ffffff",
+                "on-secondary": "#1a1c1c",
+                "tertiary-fixed-dim": "#454747",
+                "on-background": "#e2e2e2",
+                "secondary-container": "#454747",
+                "on-primary-fixed-variant": "#e2e2e2",
+                "inverse-on-surface": "#303030",
+                "on-secondary-container": "#e2e2e2",
+                "primary-fixed": "#5d5f5f",
+                "outline-variant": "#474747",
+                "background": "#131313",
+                "outline": "#919191",
+                "surface-container": "#1f1f1f",
+                "on-tertiary-fixed-variant": "#e2e2e2",
+                "secondary": "#c6c6c7",
+                "on-primary": "#1a1c1c",
+                "error-container": "#93000a",
+                "surface-tint": "#c6c6c7",
+                "secondary-fixed": "#c6c6c7",
+                "on-error-container": "#ffdad6",
+                "surface-container-lowest": "#0e0e0e",
+                "surface-container-high": "#2a2a2a",
+                "inverse-primary": "#5d5f5f",
+                "primary-container": "#d4d4d4"
+              },
+              fontFamily: {
+                "headline": ["Epilogue"],
+                "body": ["Inter"],
+                "label": ["Inter"]
+              },
+              borderRadius: {"DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px"},
+            },
+          },
+        }
+    </script>
+<style>
+        body {
+            background-color: #131313;
+            color: #ffffff;
+            font-family: 'Inter', sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .monolith-text {
+            line-height: 0.85;
+            letter-spacing: -0.05em;
+        }
+        .editorial-grid {
+            border-left: 1px solid rgba(71, 71, 71, 0.2);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background selection:bg-primary selection:text-surface">
+<!-- TopNavBar -->
+<nav class="sticky top-0 z-50 w-full bg-surface border-b border-outline-variant/20 px-8 py-6 flex items-center justify-between">
+<div class="flex items-center gap-12">
+<span class="font-headline font-black text-2xl tracking-tighter text-primary">BIDMATCH</span>
+<div class="hidden md:flex gap-8">
+<a class="font-label text-sm font-medium hover:text-primary text-on-surface-variant transition-colors" href="#">Dashboard</a>
+<a class="font-label text-sm font-medium hover:text-primary text-on-surface-variant transition-colors" href="#">Browse</a>
+<a class="font-label text-sm font-medium hover:text-primary text-on-surface-variant transition-colors" href="#">Assessments</a>
+</div>
+</div>
+<div class="flex items-center gap-6">
+<div class="hidden sm:flex items-center border-b border-outline-variant/50 focus-within:border-primary transition-colors pb-1">
+<span class="material-symbols-outlined text-on-surface-variant text-sm" data-icon="search">search</span>
+<input class="bg-transparent border-none focus:ring-0 text-sm py-0 px-2 w-48" placeholder="Search" type="text"/>
+</div>
+<span class="material-symbols-outlined cursor-pointer hover:text-primary text-on-surface-variant" data-icon="notifications">notifications</span>
+<span class="material-symbols-outlined cursor-pointer hover:text-primary text-on-surface-variant" data-icon="account_circle">account_circle</span>
+</div>
+</nav>
+<main class="min-h-screen px-8 md:px-16 pt-24 pb-32">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-0">
+<!-- Left Side: Profile Identity -->
+<div class="lg:col-span-7 flex flex-col justify-between">
+<div>
+<h1 class="font-headline font-black text-[clamp(4rem,12vw,10rem)] monolith-text text-primary mb-8">
+                        MARCUS<br/>VANCE
+                    </h1>
+<div class="flex flex-col gap-2">
+<p class="font-label text-xs uppercase tracking-[0.4em] text-on-surface-variant">Lead Full-Stack Architectural Systems</p>
+<p class="font-body text-sm text-outline">London, United Kingdom (GMT+0)</p>
+</div>
+</div>
+<div class="mt-24 lg:mt-48 flex flex-wrap gap-20">
+<div class="flex flex-col">
+<span class="font-headline font-black text-8xl text-primary">92</span>
+<span class="font-label text-[10px] tracking-[0.3em] uppercase text-outline mt-2">Skill Match</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline font-black text-8xl text-primary">88</span>
+<span class="font-label text-[10px] tracking-[0.3em] uppercase text-outline mt-2">Proposal Quality</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline font-black text-8xl text-primary">90</span>
+<span class="font-label text-[10px] tracking-[0.3em] uppercase text-outline mt-2">Understanding</span>
+</div>
+</div>
+</div>
+<!-- Right Side: Skills & Projects -->
+<div class="lg:col-span-5 editorial-grid lg:pl-16 flex flex-col gap-24">
+<!-- Verified Skills Section -->
+<section>
+<h2 class="font-label text-[10px] tracking-[0.5em] uppercase text-outline mb-8">Technical Expertise</h2>
+<div class="flex flex-wrap gap-3">
+<span class="px-4 py-2 border border-outline-variant text-[11px] uppercase tracking-widest hover:bg-primary hover:text-surface transition-all cursor-default">Typescript</span>
+<span class="px-4 py-2 border border-outline-variant text-[11px] uppercase tracking-widest hover:bg-primary hover:text-surface transition-all cursor-default">Cloud Infrastructure</span>
+<span class="px-4 py-2 border border-outline-variant text-[11px] uppercase tracking-widest hover:bg-primary hover:text-surface transition-all cursor-default">System Design</span>
+<span class="px-4 py-2 border border-outline-variant text-[11px] uppercase tracking-widest hover:bg-primary hover:text-surface transition-all cursor-default">Next.js</span>
+<span class="px-4 py-2 border border-outline-variant text-[11px] uppercase tracking-widest hover:bg-primary hover:text-surface transition-all cursor-default">Rust</span>
+<span class="px-4 py-2 border border-outline-variant text-[11px] uppercase tracking-widest hover:bg-primary hover:text-surface transition-all cursor-default">Distributed Ledgers</span>
+</div>
+</section>
+<!-- GitHub Stats -->
+<section>
+<h2 class="font-label text-[10px] tracking-[0.5em] uppercase text-outline mb-6">Commit Ledger</h2>
+<div class="space-y-4 font-body text-xs text-on-surface-variant leading-relaxed opacity-80">
+<div class="flex justify-between border-b border-outline-variant/20 pb-2">
+<span>Global Contribution Index</span>
+<span class="text-primary font-medium">Top 2%</span>
+</div>
+<div class="flex justify-between border-b border-outline-variant/20 pb-2">
+<span>Repositories Authored</span>
+<span class="text-primary font-medium">142</span>
+</div>
+<div class="flex justify-between border-b border-outline-variant/20 pb-2">
+<span>System Uptime Performance</span>
+<span class="text-primary font-medium">99.98%</span>
+</div>
+</div>
+</section>
+<!-- Past Projects -->
+<section class="space-y-12">
+<h2 class="font-label text-[10px] tracking-[0.5em] uppercase text-outline mb-8">Selected Works</h2>
+<!-- Project Card 1 -->
+<div class="group relative pt-6 border-t border-outline-variant/40">
+<div class="flex justify-between items-start mb-4">
+<h3 class="font-headline text-2xl group-hover:pl-4 transition-all duration-300">AEON Banking Core</h3>
+<span class="bg-[#FFBF00] text-black text-[9px] font-bold px-2 py-0.5 tracking-tighter">VERIFIED</span>
+</div>
+<p class="font-body text-sm text-on-surface-variant mb-6 leading-relaxed">Redesign of a modular banking core using high-concurrency Rust services and distributed database orchestration.</p>
+<div class="flex gap-4">
+<span class="text-[10px] uppercase text-outline">Q3 2023</span>
+<span class="text-[10px] uppercase text-outline underline cursor-pointer hover:text-primary">Case Study</span>
+</div>
+</div>
+<!-- Project Card 2 -->
+<div class="group relative pt-6 border-t border-outline-variant/40">
+<div class="flex justify-between items-start mb-4">
+<h3 class="font-headline text-2xl group-hover:pl-4 transition-all duration-300">LUMINA Logistics</h3>
+<span class="bg-[#FFBF00] text-black text-[9px] font-bold px-2 py-0.5 tracking-tighter">VERIFIED</span>
+</div>
+<p class="font-body text-sm text-on-surface-variant mb-6 leading-relaxed">Real-time supply chain tracking platform handling 50k+ concurrent IoT data points per second.</p>
+<div class="flex gap-4">
+<span class="text-[10px] uppercase text-outline">Q1 2024</span>
+<span class="text-[10px] uppercase text-outline underline cursor-pointer hover:text-primary">Case Study</span>
+</div>
+</div>
+<!-- Project Card 3 -->
+<div class="group relative pt-6 border-t border-outline-variant/40">
+<div class="flex justify-between items-start mb-4">
+<h3 class="font-headline text-2xl group-hover:pl-4 transition-all duration-300">SYNAPSE AI Gateway</h3>
+<span class="bg-[#FFBF00] text-black text-[9px] font-bold px-2 py-0.5 tracking-tighter">VERIFIED</span>
+</div>
+<p class="font-body text-sm text-on-surface-variant mb-6 leading-relaxed">Enterprise LLM wrapper and security layer for fortune 500 compliance monitoring.</p>
+<div class="flex gap-4">
+<span class="text-[10px] uppercase text-outline">Q4 2023</span>
+<span class="text-[10px] uppercase text-outline underline cursor-pointer hover:text-primary">Case Study</span>
+</div>
+</div>
+</section>
+<div class="mt-auto">
+<button class="w-full border border-primary text-primary font-label text-xs uppercase tracking-[0.3em] py-5 hover:bg-primary hover:text-surface transition-all">
+                        Initiate Assessment
+                    </button>
+</div>
+</div>
+</div>
+</main>
+<!-- BottomNavBar -->
+<footer class="fixed bottom-0 left-0 w-full bg-surface/90 backdrop-blur-md border-t border-outline-variant/20 px-8 py-4 z-50">
+<div class="max-w-6xl mx-auto flex justify-between items-center">
+<div class="flex gap-12">
+<div class="flex flex-col items-center gap-1 group cursor-pointer">
+<span class="material-symbols-outlined text-primary" data-icon="dashboard">dashboard</span>
+<span class="text-[9px] uppercase tracking-tighter font-medium text-primary">Home</span>
+</div>
+<div class="flex flex-col items-center gap-1 group cursor-pointer opacity-40 hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined" data-icon="work">work</span>
+<span class="text-[9px] uppercase tracking-tighter font-medium">Projects</span>
+</div>
+<div class="flex flex-col items-center gap-1 group cursor-pointer opacity-40 hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined" data-icon="quiz">quiz</span>
+<span class="text-[9px] uppercase tracking-tighter font-medium">Tests</span>
+</div>
+<div class="flex flex-col items-center gap-1 group cursor-pointer opacity-40 hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="text-[9px] uppercase tracking-tighter font-medium">Profile</span>
+</div>
+</div>
+<div class="hidden sm:block text-[10px] text-outline tracking-widest uppercase">
+                © 2024 BIDMATCH Systems LLC. All Rights Reserved.
+            </div>
+</div>
+</footer>
+</body></html>

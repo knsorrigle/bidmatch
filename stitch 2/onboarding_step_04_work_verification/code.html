@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@700;800&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "tertiary": "#e2e2e2",
+                        "on-secondary-container": "#e2e2e2",
+                        "secondary-container": "#454747",
+                        "on-tertiary-container": "#000000",
+                        "error-container": "#93000a",
+                        "surface-container": "#1f1f1f",
+                        "primary-fixed-dim": "#454747",
+                        "on-tertiary-fixed": "#ffffff",
+                        "surface": "#131313",
+                        "primary-container": "#d4d4d4",
+                        "on-tertiary": "#1a1c1c",
+                        "on-secondary-fixed": "#1a1c1c",
+                        "tertiary-fixed": "#5d5f5f",
+                        "primary-fixed": "#5d5f5f",
+                        "on-primary-fixed-variant": "#e2e2e2",
+                        "background": "#131313",
+                        "outline": "#919191",
+                        "on-surface-variant": "#c6c6c6",
+                        "on-secondary-fixed-variant": "#3a3c3c",
+                        "surface-container-high": "#2a2a2a",
+                        "inverse-primary": "#5d5f5f",
+                        "inverse-on-surface": "#303030",
+                        "on-surface": "#e2e2e2",
+                        "on-error": "#690005",
+                        "surface-tint": "#c6c6c7",
+                        "secondary": "#c6c6c7",
+                        "outline-variant": "#474747",
+                        "on-secondary": "#1a1c1c",
+                        "on-background": "#e2e2e2",
+                        "on-tertiary-fixed-variant": "#e2e2e2",
+                        "on-primary": "#1a1c1c",
+                        "primary": "#ffffff",
+                        "tertiary-fixed-dim": "#454747",
+                        "error": "#ffb4ab",
+                        "on-error-container": "#ffdad6",
+                        "surface-variant": "#353535",
+                        "surface-bright": "#393939",
+                        "surface-dim": "#131313",
+                        "inverse-surface": "#e2e2e2",
+                        "surface-container-low": "#1b1b1b",
+                        "secondary-fixed": "#c6c6c7",
+                        "secondary-fixed-dim": "#aaabab",
+                        "tertiary-container": "#909191",
+                        "surface-container-lowest": "#0e0e0e",
+                        "on-primary-container": "#000000",
+                        "surface-container-highest": "#353535",
+                        "on-primary-fixed": "#ffffff"
+                    },
+                    fontFamily: {
+                        "headline": ["Epilogue"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0px",
+                        "lg": "0px",
+                        "xl": "0px",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .rotated-text {
+            writing-mode: vertical-rl;
+            transform: rotate(180deg);
+        }
+        input:focus {
+            outline: none;
+            border-bottom-color: #ffffff !important;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body min-h-screen flex flex-col selection:bg-primary selection:text-surface">
+<!-- Top Navigation Bar -->
+<header class="h-20 flex items-center justify-between px-12 border-b border-outline-variant/10">
+<div class="font-headline font-extrabold tracking-tighter text-xl">BIDMATCH</div>
+<div class="text-[10px] tracking-[0.3em] font-medium text-on-surface-variant uppercase">STEP 04 / 05</div>
+</header>
+<main class="flex-grow flex relative">
+<!-- Left Side Bar / Rotated Label -->
+<aside class="w-24 border-r border-outline-variant/10 flex items-center justify-center">
+<div class="rotated-text text-[10px] tracking-[0.5em] font-semibold text-on-surface-variant uppercase">
+                ONBOARDING SEQUENCE
+            </div>
+</aside>
+<div class="flex-grow flex p-12 lg:p-24 gap-24">
+<!-- Content Section -->
+<div class="w-1/2 flex flex-col justify-start pt-12">
+<span class="text-[10px] tracking-[0.4em] font-semibold text-on-surface-variant mb-4 uppercase">PROVE YOUR</span>
+<h1 class="font-headline font-extrabold text-[8rem] leading-[0.85] tracking-tighter text-primary mb-12">
+                    WORK.
+                </h1>
+<p class="text-on-surface-variant font-light text-sm max-w-xs leading-relaxed">
+                    Links help us verify your skills automatically.
+                </p>
+</div>
+<!-- Interaction Section -->
+<div class="w-1/2 flex flex-col justify-start pt-12 space-y-16">
+<!-- Input Group -->
+<div class="space-y-12">
+<div class="group">
+<label class="block text-[10px] tracking-[0.2em] font-semibold text-on-surface-variant mb-2 uppercase">GITHUB PROFILE</label>
+<input class="w-full bg-transparent border-t-0 border-x-0 border-b border-outline-variant py-3 text-primary placeholder:text-surface-bright focus:ring-0 transition-colors" placeholder="https://github.com/username" type="text"/>
+</div>
+<div class="group">
+<label class="block text-[10px] tracking-[0.2em] font-semibold text-on-surface-variant mb-2 uppercase">PORTFOLIO URL</label>
+<input class="w-full bg-transparent border-t-0 border-x-0 border-b border-outline-variant py-3 text-primary placeholder:text-surface-bright focus:ring-0 transition-colors" placeholder="https://yourportfolio.com" type="text"/>
+</div>
+<div class="group">
+<label class="block text-[10px] tracking-[0.2em] font-semibold text-on-surface-variant mb-2 uppercase">LINKEDIN</label>
+<input class="w-full bg-transparent border-t-0 border-x-0 border-b border-outline-variant py-3 text-primary placeholder:text-surface-bright focus:ring-0 transition-colors" placeholder="linkedin.com/in/profile" type="text"/>
+</div>
+</div>
+<!-- Upload Zone -->
+<div class="relative group cursor-pointer">
+<div class="border border-dashed border-outline-variant p-12 flex flex-col items-center justify-center space-y-3 transition-colors group-hover:border-primary">
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary">upload_file</span>
+<div class="text-[11px] tracking-[0.2em] font-bold text-primary uppercase">DROP CASE STUDIES HERE</div>
+<div class="text-[10px] text-on-surface-variant">PDF or images accepted</div>
+</div>
+</div>
+<!-- Pagination & CTA -->
+<div class="flex items-center justify-between pt-8">
+<!-- Pagination Marker (from JSON logic) -->
+<div class="flex gap-4">
+<span class="text-[10px] font-bold text-primary">04</span>
+<span class="text-[10px] font-bold text-on-surface-variant/30">/</span>
+<span class="text-[10px] font-bold text-on-surface-variant/30">05</span>
+</div>
+<!-- Button Component -->
+<button class="px-8 py-4 border border-outline text-[11px] tracking-[0.2em] font-bold text-primary uppercase hover:bg-primary hover:text-surface transition-all flex items-center gap-3">
+                        CONTINUE
+                        <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</main>
+<!-- Visual Texture / Background Branding -->
+<div class="fixed bottom-12 left-12 opacity-5 pointer-events-none">
+<div class="font-headline font-extrabold text-[12rem] tracking-tighter leading-none">BID</div>
+</div>
+</body></html>

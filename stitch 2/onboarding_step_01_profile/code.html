@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@700;800;900&amp;family=Inter:wght@300;400;500;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "tertiary": "#e2e2e2",
+                        "on-secondary-container": "#e2e2e2",
+                        "secondary-container": "#454747",
+                        "on-tertiary-container": "#000000",
+                        "error-container": "#93000a",
+                        "surface-container": "#1f1f1f",
+                        "primary-fixed-dim": "#454747",
+                        "on-tertiary-fixed": "#ffffff",
+                        "surface": "#131313",
+                        "primary-container": "#d4d4d4",
+                        "on-tertiary": "#1a1c1c",
+                        "on-secondary-fixed": "#1a1c1c",
+                        "tertiary-fixed": "#5d5f5f",
+                        "primary-fixed": "#5d5f5f",
+                        "on-primary-fixed-variant": "#e2e2e2",
+                        "background": "#000000",
+                        "outline": "#919191",
+                        "on-surface-variant": "#c6c6c6",
+                        "on-secondary-fixed-variant": "#3a3c3c",
+                        "surface-container-high": "#2a2a2a",
+                        "inverse-primary": "#5d5f5f",
+                        "inverse-on-surface": "#303030",
+                        "on-surface": "#e2e2e2",
+                        "on-error": "#690005",
+                        "surface-tint": "#c6c6c7",
+                        "secondary": "#c6c6c7",
+                        "outline-variant": "#474747",
+                        "on-secondary": "#1a1c1c",
+                        "on-background": "#e2e2e2",
+                        "on-tertiary-fixed-variant": "#e2e2e2",
+                        "on-primary": "#1a1c1c",
+                        "primary": "#ffffff",
+                        "tertiary-fixed-dim": "#454747",
+                        "error": "#ffb4ab",
+                        "on-error-container": "#ffdad6",
+                        "surface-variant": "#353535",
+                        "surface-bright": "#393939",
+                        "surface-dim": "#131313",
+                        "inverse-surface": "#e2e2e2",
+                        "surface-container-low": "#1b1b1b",
+                        "secondary-fixed": "#c6c6c7",
+                        "secondary-fixed-dim": "#aaabab",
+                        "tertiary-container": "#909191",
+                        "surface-container-lowest": "#0e0e0e",
+                        "on-primary-container": "#000000",
+                        "surface-container-highest": "#353535",
+                        "on-primary-fixed": "#ffffff"
+                    },
+                    fontFamily: {
+                        "headline": ["Epilogue"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    },
+                    borderRadius: {"DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            background-color: #000000;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .vertical-text {
+            writing-mode: vertical-rl;
+            transform: rotate(180deg);
+        }
+        .kerning-loose {
+            letter-spacing: 0.3em;
+        }
+        .kerning-tight {
+            letter-spacing: -0.05em;
+        }
+        input:focus {
+            outline: none;
+            border-bottom-color: #ffffff !important;
+        }
+    </style>
+</head>
+<body class="font-body selection:bg-primary selection:text-background">
+<!-- Top Navigation Layer -->
+<nav class="fixed top-0 left-0 w-full z-50 px-12 py-10 flex justify-between items-start">
+<div class="font-headline font-black text-xl kerning-tight">
+            BIDMATCH
+        </div>
+<div class="font-label text-xs kerning-loose text-on-surface-variant">
+            STEP 01 / 05
+        </div>
+</nav>
+<!-- Side Bar Indicator -->
+<div class="fixed left-0 top-0 h-full flex items-center px-4 z-40">
+<span class="vertical-text font-label text-[10px] kerning-loose text-outline tracking-widest opacity-60">
+            ONBOARDING SEQUENCE
+        </span>
+</div>
+<!-- Main Content Canvas -->
+<main class="min-h-screen grid grid-cols-12 items-center px-24 gap-8">
+<!-- Left Column: The Statement -->
+<div class="col-span-7 flex flex-col justify-center">
+<h2 class="font-label text-sm kerning-loose text-on-surface-variant mb-2">
+                LET'S BUILD YOUR
+            </h2>
+<h1 class="font-headline text-[12rem] leading-none font-black kerning-tight text-primary">
+                PROFILE.
+            </h1>
+</div>
+<!-- Right Column: The Information -->
+<div class="col-span-4 col-start-9 flex flex-col justify-center space-y-24">
+<div class="space-y-16">
+<!-- Field 1 -->
+<div class="group">
+<label class="block font-label text-[10px] kerning-loose text-outline mb-4 group-focus-within:text-primary transition-colors">
+                        FULL NAME
+                    </label>
+<input class="w-full bg-transparent border-t-0 border-l-0 border-r-0 border-b border-outline-variant py-4 px-0 font-body text-xl placeholder:text-surface-container-high transition-all focus:ring-0" placeholder="Johnathan Doe" type="text"/>
+</div>
+<!-- Field 2 -->
+<div class="group">
+<label class="block font-label text-[10px] kerning-loose text-outline mb-4 group-focus-within:text-primary transition-colors">
+                        PROFESSIONAL TITLE
+                    </label>
+<input class="w-full bg-transparent border-t-0 border-l-0 border-r-0 border-b border-outline-variant py-4 px-0 font-body text-xl placeholder:text-surface-container-high transition-all focus:ring-0" placeholder="Lead Creative Architect" type="text"/>
+</div>
+</div>
+<!-- Action Area -->
+<div class="flex justify-end pt-12">
+<button class="group relative flex items-center justify-between border border-primary px-10 py-5 w-full hover:bg-primary hover:text-background transition-all duration-300">
+<span class="font-label text-xs kerning-loose font-bold uppercase">CONTINUE</span>
+<span class="material-symbols-outlined text-lg">arrow_forward</span>
+</button>
+</div>
+</div>
+</main>
+<!-- Footer Layer -->
+<footer class="fixed bottom-0 left-0 w-full z-50 px-12 py-10 flex justify-between items-end">
+<div class="font-label text-[9px] kerning-loose text-outline-variant">
+            © 2026 BIDMATCH
+        </div>
+<!-- Pagination visualization -->
+<div class="flex space-x-8">
+<div class="flex items-center space-x-4">
+<span class="font-label text-xs text-primary">01</span>
+<div class="w-12 h-[1px] bg-primary"></div>
+<span class="font-label text-xs text-outline-variant">02</span>
+<span class="font-label text-xs text-outline-variant">03</span>
+<span class="font-label text-xs text-outline-variant">04</span>
+<span class="font-label text-xs text-outline-variant">05</span>
+</div>
+</div>
+</footer>
+<!-- Background texture/gradient for depth -->
+<div class="fixed inset-0 pointer-events-none opacity-20 bg-[radial-gradient(circle_at_50%_50%,_#1a1c1c_0%,_transparent_70%)] z-[-1]"></div>
+</body></html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>BIDMATCH Assessment</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700;800&amp;family=Inter:wght@300;400;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "tertiary": "#e2e2e2",
+              "surface-container-low": "#1b1b1b",
+              "surface-dim": "#131313",
+              "on-secondary-fixed": "#1a1c1c",
+              "on-secondary-fixed-variant": "#3a3c3c",
+              "on-primary-fixed": "#ffffff",
+              "secondary-fixed-dim": "#aaabab",
+              "error": "#ffb4ab",
+              "surface-container-highest": "#353535",
+              "surface-bright": "#393939",
+              "on-tertiary-container": "#000000",
+              "on-tertiary": "#1a1c1c",
+              "tertiary-container": "#909191",
+              "on-tertiary-fixed": "#ffffff",
+              "primary-fixed-dim": "#454747",
+              "on-surface-variant": "#c6c6c6",
+              "inverse-surface": "#e2e2e2",
+              "surface-variant": "#353535",
+              "on-surface": "#e2e2e2",
+              "tertiary-fixed": "#5d5f5f",
+              "surface": "#131313",
+              "on-error": "#690005",
+              "on-primary-container": "#000000",
+              "primary": "#ffffff",
+              "on-secondary": "#1a1c1c",
+              "tertiary-fixed-dim": "#454747",
+              "on-background": "#e2e2e2",
+              "secondary-container": "#454747",
+              "on-primary-fixed-variant": "#e2e2e2",
+              "inverse-on-surface": "#303030",
+              "on-secondary-container": "#e2e2e2",
+              "primary-fixed": "#5d5f5f",
+              "outline-variant": "#474747",
+              "background": "#131313",
+              "outline": "#919191",
+              "surface-container": "#1f1f1f",
+              "on-tertiary-fixed-variant": "#e2e2e2",
+              "secondary": "#c6c6c7",
+              "on-primary": "#1a1c1c",
+              "error-container": "#93000a",
+              "surface-tint": "#c6c6c7",
+              "secondary-fixed": "#c6c6c7",
+              "on-error-container": "#ffdad6",
+              "surface-container-lowest": "#0e0e0e",
+              "surface-container-high": "#2a2a2a",
+              "inverse-primary": "#5d5f5f",
+              "primary-container": "#d4d4d4",
+              "brand-amber": "#F59E0B"
+            },
+            fontFamily: {
+              "headline": ["Epilogue"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+      }
+      body {
+        background-color: #0e0e0e;
+        color: #e2e2e2;
+        font-family: 'Inter', sans-serif;
+      }
+      .editorial-caps {
+        font-variant: all-small-caps;
+        letter-spacing: 0.15em;
+      }
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+    </style>
+</head>
+<body class="bg-surface-container-lowest text-on-surface overflow-hidden">
+<!-- Top Navigation Bar (Shared Component) -->
+<nav class="fixed top-0 w-full h-20 border-b border-outline-variant/20 bg-surface/80 backdrop-blur-md z-50 flex items-center justify-between px-10">
+<div class="flex items-center gap-12">
+<span class="font-headline font-extrabold text-2xl tracking-tighter text-primary">BIDMATCH</span>
+<div class="hidden md:flex gap-8 text-sm editorial-caps text-on-surface-variant">
+<a class="hover:text-primary transition-colors" href="#">Dashboard</a>
+<a class="hover:text-primary transition-colors" href="#">Browse</a>
+<a class="hover:text-primary transition-colors" href="#">Assessments</a>
+</div>
+</div>
+<div class="flex items-center gap-6">
+<span class="material-symbols-outlined text-on-surface-variant hover:text-primary cursor-pointer">notifications</span>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary cursor-pointer">account_circle</span>
+</div>
+</div>
+</nav>
+<main class="relative min-h-screen pt-20 flex">
+<!-- Left Panel: Project Summary (Editorial Side) -->
+<aside class="hidden lg:flex w-1/4 flex-col justify-between p-12 border-r border-outline-variant/10">
+<div>
+<p class="editorial-caps text-on-surface-variant text-xs mb-4">Current Assessment</p>
+<h2 class="font-headline text-3xl font-bold leading-tight mb-8">Technical Proficiency <br/>Tier III</h2>
+<div class="space-y-10">
+<div>
+<p class="editorial-caps text-[10px] text-outline mb-1">Project reference</p>
+<p class="text-sm font-light text-on-surface">Cloud Architecture Redesign / AX-204</p>
+</div>
+<div>
+<p class="editorial-caps text-[10px] text-outline mb-1">Duration</p>
+<p class="text-sm font-light text-on-surface">15 Minutes / Timed</p>
+</div>
+<div>
+<p class="editorial-caps text-[10px] text-outline mb-1">Required Score</p>
+<p class="text-sm font-light text-on-surface">Minimum 85% Accuracy</p>
+</div>
+</div>
+</div>
+<div class="opacity-30">
+<p class="editorial-caps text-[10px]">Reference: R. Grumberg System</p>
+<p class="text-[9px] mt-1 uppercase tracking-widest">Confidential Data — BIDMATCH HQ</p>
+</div>
+</aside>
+<!-- Center: Quiz Content -->
+<section class="flex-1 flex items-center justify-center p-6 md:p-12 relative overflow-hidden">
+<!-- Background Decorative Element -->
+<div class="absolute -right-20 -top-20 w-96 h-96 border border-outline-variant/5 rotate-12 pointer-events-none"></div>
+<div class="w-full max-w-2xl bg-surface border border-outline-variant/30 p-1 bg-opacity-50">
+<div class="p-10 md:p-16 border border-outline-variant/10">
+<!-- Progress Section -->
+<div class="mb-12">
+<div class="flex justify-between items-baseline mb-3">
+<span class="editorial-caps text-xs tracking-[0.3em] text-outline">Question 02 / 05</span>
+<span class="text-[10px] font-mono text-outline">40% COMPLETE</span>
+</div>
+<div class="w-full h-[1px] bg-surface-container-high">
+<div class="w-2/5 h-full bg-brand-amber"></div>
+</div>
+</div>
+<!-- Question Heading -->
+<h1 class="font-headline text-4xl md:text-5xl font-bold leading-[1.1] mb-12 text-primary tracking-tight">
+                        What framework is required for this project?
+                    </h1>
+<!-- Options -->
+<div class="space-y-4 mb-12">
+<button class="w-full text-left p-5 border border-outline-variant/40 hover:border-outline transition-all flex items-center group">
+<span class="editorial-caps text-[10px] mr-6 text-outline group-hover:text-primary transition-colors">A</span>
+<span class="text-md font-light text-on-surface-variant group-hover:text-primary transition-colors">Next.js 14 with App Router</span>
+</button>
+<!-- Selected Option -->
+<button class="w-full text-left p-5 bg-brand-amber text-on-tertiary border border-brand-amber flex items-center">
+<span class="editorial-caps text-[10px] mr-6 opacity-60">B</span>
+<span class="text-md font-bold tracking-tight">Tailwind CSS Utility Engine</span>
+</button>
+<button class="w-full text-left p-5 border border-outline-variant/40 hover:border-outline transition-all flex items-center group">
+<span class="editorial-caps text-[10px] mr-6 text-outline group-hover:text-primary transition-colors">C</span>
+<span class="text-md font-light text-on-surface-variant group-hover:text-primary transition-colors">Vue Options API 3.0</span>
+</button>
+<button class="w-full text-left p-5 border border-outline-variant/40 hover:border-outline transition-all flex items-center group">
+<span class="editorial-caps text-[10px] mr-6 text-outline group-hover:text-primary transition-colors">D</span>
+<span class="text-md font-light text-on-surface-variant group-hover:text-primary transition-colors">Angular Ivy Compiler</span>
+</button>
+</div>
+<!-- Footer Controls -->
+<div class="flex justify-between items-center">
+<a class="text-[11px] editorial-caps text-outline hover:text-primary transition-colors" href="#">← Previous</a>
+<a class="text-sm editorial-caps text-primary hover:tracking-[0.2em] transition-all font-bold" href="#">Next →</a>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Bottom Navigation Bar (Shared Component - Hidden for Focus) -->
+<!-- The Exclusion Protocol: Linear process assessment flow requires 100% focus. BottomNavBar is hidden. -->
+<!-- Decorative Void Elements -->
+<div class="fixed bottom-0 left-0 w-full h-1/4 pointer-events-none bg-gradient-to-t from-surface-container-lowest to-transparent opacity-50"></div>
+</body></html>

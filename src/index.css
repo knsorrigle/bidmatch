@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@theme {
+  --font-headline: "Epilogue", ui-sans-serif, system-ui;
+  --font-body: "Inter", ui-sans-serif, system-ui;
+  --font-label: "Inter", ui-sans-serif, system-ui;
+  
+  --color-primary: #ffffff;
+  --color-background: #000000;
+  --color-accent-amber: #F5A623;
+  --color-outline: #919191;
+  --color-outline-variant: #474747;
+  --color-on-surface: #e2e2e2;
+  --color-on-surface-variant: #c6c6c6;
+  --color-surface-container-highest: #353535;
+  --color-surface-container-high: #2a2a2a;
+  --color-surface-container: #1f1f1f;
+  --color-surface-container-low: #1b1b1b;
+  --color-surface-container-lowest: #0e0e0e;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: var(--font-body);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+}

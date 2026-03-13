@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@700;800&amp;family=Inter:wght@400;500&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "tertiary-fixed-dim": "#454747",
+              "inverse-surface": "#e2e2e2",
+              "on-tertiary-container": "#000000",
+              "on-tertiary-fixed-variant": "#e2e2e2",
+              "on-secondary-fixed": "#1a1c1c",
+              "secondary": "#c6c6c7",
+              "on-error-container": "#ffdad6",
+              "error": "#ffb4ab",
+              "surface": "#131313",
+              "inverse-on-surface": "#303030",
+              "primary": "#ffffff",
+              "on-background": "#e2e2e2",
+              "on-primary": "#1a1c1c",
+              "on-secondary-container": "#e2e2e2",
+              "on-tertiary-fixed": "#ffffff",
+              "tertiary-container": "#909191",
+              "on-secondary": "#1a1c1c",
+              "surface-tint": "#c6c6c7",
+              "surface-container-highest": "#353535",
+              "surface-variant": "#353535",
+              "inverse-primary": "#5d5f5f",
+              "secondary-fixed-dim": "#aaabab",
+              "primary-fixed": "#5d5f5f",
+              "tertiary-fixed": "#5d5f5f",
+              "on-error": "#690005",
+              "surface-container-lowest": "#0e0e0e",
+              "on-surface": "#e2e2e2",
+              "outline": "#919191",
+              "outline-variant": "#474747",
+              "secondary-container": "#454747",
+              "on-primary-fixed": "#ffffff",
+              "on-tertiary": "#1a1c1c",
+              "surface-container-high": "#2a2a2a",
+              "error-container": "#93000a",
+              "surface-container": "#1f1f1f",
+              "on-surface-variant": "#c6c6c6",
+              "surface-dim": "#131313",
+              "primary-fixed-dim": "#454747",
+              "surface-bright": "#393939",
+              "secondary-fixed": "#c6c6c7",
+              "on-primary-container": "#000000",
+              "primary-container": "#d4d4d4",
+              "surface-container-low": "#1b1b1b",
+              "background": "#131313",
+              "tertiary": "#e2e2e2",
+              "on-primary-fixed-variant": "#e2e2e2",
+              "on-secondary-fixed-variant": "#3a3c3c"
+            },
+            fontFamily: {
+              "headline": ["Epilogue"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            background-color: #000000;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .tight-tracking {
+            letter-spacing: -0.05em;
+        }
+        .ghost-border {
+            border: 1px solid rgba(71, 71, 71, 0.2);
+        }
+    </style>
+</head>
+<body class="bg-black text-primary font-body">
+<!-- Top Navigation -->
+<nav class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-8 md:px-12 py-10">
+<div class="font-headline font-bold text-sm tracking-[0.2em] select-none">
+            BIDMATCH
+        </div>
+<div class="flex items-center space-x-12">
+<a class="text-sm font-label tracking-wider hover:underline underline-offset-4 transition-all duration-300" href="#">
+                Login
+            </a>
+</div>
+</nav>
+<!-- Main Editorial Content -->
+<main class="min-h-screen flex flex-col justify-center items-center px-6">
+<div class="w-full max-w-7xl flex flex-col items-center text-center">
+<!-- Hero Headline -->
+<h1 class="font-headline font-extrabold text-6xl md:text-8xl lg:text-9xl tight-tracking leading-[0.9] mb-12 max-w-5xl">
+                Hire Without The Guesswork
+            </h1>
+<!-- Subline -->
+<p class="font-body text-on-surface-variant text-lg md:text-xl max-w-md mb-16 font-light leading-relaxed">
+                AI ranks every freelancer before you even talk to them.
+            </p>
+<!-- CTA -->
+<div class="flex flex-col items-center">
+<button class="group relative px-12 py-4 border border-outline text-primary font-label text-xs tracking-[0.3em] uppercase hover:bg-white hover:text-black transition-all duration-500 ease-in-out">
+                    Enter
+                </button>
+</div>
+</div>
+</main>
+<!-- Asymmetric Ornamental Elements -->
+<div class="fixed bottom-12 left-12 hidden lg:block">
+<div class="rotate-90 origin-left">
+<span class="text-[10px] tracking-[0.5em] text-outline-variant font-label uppercase">
+                Status: System Active 2024
+            </span>
+</div>
+</div>
+<div class="fixed bottom-12 right-12 text-right hidden lg:block">
+<span class="text-[10px] tracking-[0.2em] text-outline-variant font-label block mb-2">
+            SCROLL TO EXPLORE
+        </span>
+<div class="w-px h-16 bg-outline-variant ml-auto"></div>
+</div>
+<!-- Background Structure (Minimalist Grid/Plates) -->
+<div class="fixed inset-0 -z-10 flex pointer-events-none">
+<div class="flex-1 border-r border-outline-variant opacity-5"></div>
+<div class="flex-1 border-r border-outline-variant opacity-5"></div>
+<div class="flex-1 border-r border-outline-variant opacity-5"></div>
+<div class="flex-1 border-r border-outline-variant opacity-5"></div>
+</div>
+<!-- Secondary Navigation/Footer Elements -->
+<footer class="fixed bottom-0 left-0 w-full px-8 md:px-12 py-10 flex justify-between items-end mix-blend-difference pointer-events-none">
+<div class="text-[10px] font-label text-on-surface-variant tracking-widest pointer-events-auto">© 2026 BIDMATCH</div>
+<div class="hidden md:flex flex-col items-end pointer-events-auto">
+<a class="text-[10px] font-label text-on-surface-variant tracking-widest hover:text-white mb-2" href="#">TERMS</a>
+<a class="text-[10px] font-label text-on-surface-variant tracking-widest hover:text-white" href="#">PRIVACY</a>
+</div>
+</footer>
+</body></html>
